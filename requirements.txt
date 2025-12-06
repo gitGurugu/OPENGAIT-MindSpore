@@ -1,0 +1,39 @@
+# OpenGait-MindSpore Requirements
+# 
+# 本项目是将OpenGait从PyTorch迁移到MindSpore框架的版本
+# 
+# 核心框架依赖
+mindspore>=2.0.0  # MindSpore深度学习框架
+# 注意：MindSpore需要根据您的系统（CPU/GPU/Ascend）单独安装
+# 请参考：https://www.mindspore.cn/install
+
+# 数据处理
+numpy>=1.19.0
+opencv-python>=4.5.0
+Pillow>=8.0.0
+
+# 配置和工具
+pyyaml>=5.4.0
+tqdm>=4.60.0
+
+# 数据压缩（用于数据集解压）
+py7zr>=0.20.0
+
+# 图像处理
+kornia>=0.6.0  # 用于某些图像变换操作
+
+# 张量操作
+einops>=0.4.0  # 用于张量重排操作
+
+# 日志和可视化
+tensorboardX>=2.4  # TensorBoard支持（用于日志可视化）
+
+# 可选依赖（根据需求安装）
+# scipy>=1.7.0  # 如果需要使用scipy的功能
+# matplotlib>=3.3.0  # 如果需要可视化功能
+
+# 开发和测试（可选）
+# pytest>=6.0.0  # 用于测试
+# black>=21.0.0  # 代码格式化
+# flake8>=3.9.0  # 代码检查
+
